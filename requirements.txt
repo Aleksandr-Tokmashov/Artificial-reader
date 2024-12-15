@@ -2,3 +2,19 @@ pdf2image
 Pillow
 pytesseract
 numpy
+tabula
+tabula-py
+jpype1
+numpy < 2.0.0
+docx
+python-docx
+frontend
+pymupdf
+tools
+xlsxwriter
+deeppavlov
+transformers
+torchcrf
+spacy
+pdfminer.six
+openpyxl

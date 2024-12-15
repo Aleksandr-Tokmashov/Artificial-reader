@@ -2,11 +2,15 @@ import pytesseract
 from pdf2image import convert_from_path
 from PIL import Image
 
-
+# Укажите путь к Tesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
+# Укажите полный путь к Poppler
+poppler_path = r"C:\Program Files\poppler-24.08.0\Library\bin"
+
 def pdf_to_images(pdf_path):
-    images = convert_from_path(pdf_path)
+    # Используем полный путь к Poppler
+    images = convert_from_path(pdf_path, poppler_path=poppler_path)
     return images
 
 def recognize_text(image):
